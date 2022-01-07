@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ["www.google.co.uk"]
+    domains: ["logodix.com", "s.gravatar.com", "firebasestorage.googleapis.com", "cdn.sstatic.net"]
   }
 }

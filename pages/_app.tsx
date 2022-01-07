@@ -10,23 +10,18 @@ function MyApp({ Component, pageProps }) {
 
     <Auth0Provider
       domain='dev-ly2qm2-a.us.auth0.com'
-      clientId='...'
-      redirectUri={process.env.CLIENT_URL}
+      clientId='jF2CNTOBmSxz3e5Rf7hR0sSuyBzAAZ8k'
+      redirectUri={'http://localhost:3000/'}
       
     >
 
     <ApolloProvider client={apolloClient}>
 
-  
      <Component {...pageProps} />
     
-
     </ApolloProvider>
 
-
    </Auth0Provider>
-
-  
 
   );
 }

@@ -22,9 +22,78 @@
     @apply flex gap-1 border-b-2 pb-3 border-transparent transition-all hover:border-blue-400 duration-200 hover:text-blue-400 cursor-pointer items-center
   }
   body {
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden bg-[#3d3d3d]
   }
   .pagination_button {
     @apply flex mx-auto flex-col items-center transition-all duration-200 hover:text-blue-500 cursor-pointer
   }
+
+  .page_container {
+    @apply max-w-[1264px] mx-auto w-full 
+  }
+  .smoose {
+    @apply transition-all duration-200
+  }
+
+  .header_icon {
+    @apply h-[47px] w-[40px] transition-all whitespace-nowrap  duration-200 hover:bg-hover-color hover:bg-opacity-10 rounded-lg  cursor-pointer flex items-center justify-center gap-2
+  }
+
+  .sidebar_item {
+    @apply flex p-2 w-full max-w-[160px] rounded-l-sm transition-all duration-200 cursor-pointer hover:bg-hover-color hover:bg-opacity-20 border-r-[3px] border-transparent text-text
+  }
+
+  .small_text {
+    @apply text-xs font-semibold text-blue-500 hover:text-blue-600 transition-all duration-200 cursor-pointer
+  }
+
+  .selectItem {
+    @apply flex items-center gap-3 p-2 transition-all duration-200 hover:bg-hover-color bg-opacity-20 cursor-pointer text-white font-semibold text-sm
+  }
+
+  .profileHeaderButton {
+    @apply p-2 border-gray-300 border-opacity-80 rounded-md flex gap-3 items-center transition-all duration-200 hover:bg-hover-color hover:bg-opacity-10 cursor-pointer
+  }
+
+  .tabs_button {
+    @apply p-2 transition-all rounded-full  duration-200 text-sm cursor-pointer text-text hover:bg-hover-color hover:bg-opacity-10 
+  }
+
+  .tabs_button_active {
+    @apply bg-primary hover:bg-opacity-100  text-black hover:bg-primary
+  }
+
+  .fileSelectButton {
+    @apply absolute bottom-0 left-0 right-0 p-2 bg-gray-400 hover:bg-gray-500 transition-all duration-200 cursor-pointer w-full text-sm font-semibold
+  }
+
+  .blue_button {
+    @apply p-2 text-white font-semibold text-sm bg-blue-500 flex-grow rounded-lg cursor-pointer transition-all duration-200 hover:bg-blue-600 text-center
+  }
+
+  .group_button {
+    @apply p-3 border border-gray-300 border-opacity-50 transition-all duration-200 hover:bg-hover-color hover:bg-opacity-10 cursor-pointer text-xs px-3 text-text  bg-brown
+  }
+
+
+  .quest_item {
+    @apply flex gap-2 hover:bg-light transition-all duration-200 cursor-pointer items-center border-b pb-2 pl-2 border-gray-500 border-opacity-30
+  }
+
+  .button_trasparent_blue {
+    @apply text-text p-2 hover:bg-light text-xs rounded-md hover:text-blue-500  transition-all duration-200 cursor-pointer 
+  }
+
+  .marker {
+    @apply bg-[#3d4951] rounded-md p-1  text-blue-300 text-xs
+  }
 }
+
+.tox-statusbar {
+  display:  none !important;
+}
+
+.tox-notification--warning {
+  display: none !important;
+}
+

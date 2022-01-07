@@ -10,9 +10,39 @@ generator client {
 model User {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
   email     String?  @unique
-  image     String?
-  role      String
+  reputation Int  @default(0)
+  picture    String?
+  username String?
+  bio String?
+  location String?
+
 }
 
+model Question {
+  id         String @id @default(uuid())
+  createdAt  DateTime @default(now())
+  title      String 
+  body String 
+  tags String 
+  isClosed Boolean @default(false)
+  creatorId String 
+  watched Int @default(0)
+
+}
+
+model Comment {
+  id String @id @default(uuid())
+  createdAt DateTime @default(now())
+  body String 
+  isClosed Boolean @default(false)
+  creatorId String?
+  questionId String
+}
+
+model Vote {
+  id String @id @default(uuid())
+  creatorId String?
+  commentId String?
+  questionId String?
+}
