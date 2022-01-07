@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { Editor } from '@tinymce/tinymce-react';
 
-const RichTextEditor: React.FC<{cb: (val: string) => void, val: string}> = ({cb, val}) => {
+const RichTextEditor: React.FC<{cb: (body: string) => void, val: string}> = ({cb, val}) => {
 
   const editorRef = useRef(null);
   const log = () => {
